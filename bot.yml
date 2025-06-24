@@ -1,0 +1,25 @@
+name: Run Telegram Bot
+
+on:
+  workflow_dispatch:  # Manuelles Starten per Button in GitHub
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Code auschecken
+        uses: actions/checkout@v3
+
+      - name: Python einrichten
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Abhängigkeiten installieren
+        run: pip install pyTelegramBotAPI
+
+      - name: Bot starten
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python3 main.py
