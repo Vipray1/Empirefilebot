@@ -5,8 +5,8 @@ from flask import Flask, request
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # --- CONFIG ---
-TOKEN = 'DEIN_TELEGRAM_BOT_TOKEN_HIER'
-OWNER_ID = 123456789  # Deine Telegram-ID (als int)
+TOKEN = '7528184755:AAGyVfEAZ2-5bvZX4h2sLrydrqCDqlZkosU'
+OWNER_ID = 7662000357  # Deine Telegram-ID (als int)
 
 FILES = {
     "admins": "admins.json",
@@ -223,7 +223,7 @@ def index():
 
 if __name__ == '__main__':
     # Wichtig: Ersetze DEINE_DOMAIN hier mit deiner Render-/Hosting-Domain (ohne https://)
-    YOUR_DOMAIN = "dein-service.onrender.com"
+    YOUR_DOMAIN = "https://empirefilebot.onrender.com"
     WEBHOOK_URL = f"https://{YOUR_DOMAIN}/{TOKEN}"
     bot.remove_webhook()
     bot.set_webhook(url=WEBHOOK_URL)
