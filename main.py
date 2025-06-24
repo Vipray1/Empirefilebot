@@ -223,7 +223,7 @@ def index():
 
 if __name__ == '__main__':
     # Wichtig: Ersetze DEINE_DOMAIN hier mit deiner Render-/Hosting-Domain (ohne https://)
-    YOUR_DOMAIN = "https://empirefilebot.onrender.com"
+    YOUR_DOMAIN = "empirefilebot.onrender.com"
     WEBHOOK_URL = f"https://{YOUR_DOMAIN}/{TOKEN}"
     bot.remove_webhook()
     bot.set_webhook(url=WEBHOOK_URL)
