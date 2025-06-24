@@ -1,13 +1,12 @@
 import os
 import json
+from dotenv import load_dotenv
 import telebot
 from flask import Flask, request
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-# --- CONFIG ---
-TOKEN = '7528184755:AAGyVfEAZ2-5bvZX4h2sLrydrqCDqlZkosU'
-OWNER_ID = 7662000357  # Deine Telegram-ID (als int)
-
+TOKEN = os.getenv("BOT_TOKEN")
+OWNER_ID = os.getenv("CHAT_ID")
 FILES = {
     "admins": "admins.json",
     "tools": "tools.json",
