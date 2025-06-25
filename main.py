@@ -1,6 +1,5 @@
 import os
 import json
-from dotenv import load_dotenv
 import telebot
 from flask import Flask, request
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
