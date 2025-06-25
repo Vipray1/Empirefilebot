@@ -5,7 +5,7 @@ from flask import Flask, request
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 TOKEN = ("7528184755:AAGyVfEAZ2-5bvZX4h2sLrydrqCDqlZkosU")
-OWNER_ID = ("7662000357")
+OWNER_ID = 7662000357
 FILES = {
     "admins": "admins.json",
     "tools": "tools.json",
